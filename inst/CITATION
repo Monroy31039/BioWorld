@@ -1,0 +1,11 @@
+bibentry(
+  bibtype = "Manual",
+  title = "BioWorldR: Curated Biodiversity and Species Datasets for R",
+  author = person(
+    given = "Juan David",
+    family = "Monroy"
+  ),
+  year = 2025,
+  note = "R package version 0.1.0",
+  url = "https://github.com/Monroy31039/BioWorld"
+)

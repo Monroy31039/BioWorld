@@ -1,0 +1,4 @@
+"0","# No modificar este chunk"
+"0","knitr::opts_chunk$set(echo = TRUE,prompt =F, fig.width=8,"
+"0","                      fig.align = ""center"",fig.height = 4,tidy = F,"
+"0","                      comment = """",warning = F,message=F,size = ""medium"",collapse = F,highlight = T,strip.white = F)"

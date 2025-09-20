@@ -1,0 +1,14 @@
+"0","# Se accede directamente a las columnas de la tabla1"
+"0","attach(tabla)"
+"2","The following objects are masked _by_ .GlobalEnv:
+
+    Dmax, Dmin, llamadas
+
+"
+"0","# Se determina la discrepancia D máxima de Kolmorogov"
+"0","D <- max(abs(Dmax),abs(Dmin))"
+"0","D"
+"1","[1]"
+"1"," 0.1588174"
+"1","
+"

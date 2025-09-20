@@ -1,0 +1,3 @@
+"0","calle_final_imputado <- bind_rows(calle_entrevista, calle_obs) %>%"
+"0","  arrange(orden_original) %>%"
+"0","  select(-orden_original)"

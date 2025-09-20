@@ -1,0 +1,5 @@
+"0","edadG  <- edadG  %>% mutate(Método = ""Calibración por propensión"")"
+"0","edadG2 <- edadG2 %>% mutate(Método = ""Horvitz-Thompson modificado"")"
+"0","comparacion <- bind_rows(edadG, edadG2)"
+"0","comparacion <- comparacion %>% select(Método, Media, Varianza, SE, CV_Edad)"
+"0","comparacion"

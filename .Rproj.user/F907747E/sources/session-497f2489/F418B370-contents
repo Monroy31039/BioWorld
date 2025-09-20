@@ -1,0 +1,69 @@
+# BioWorldR - A Curated Collection of Biodiversity and Species Datasets and Utilities
+# Version 0.1.0
+# Copyright (C) 2025 Juan David Monroy
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+
+
+
+library(testthat)
+
+# Flora_brazil
+test_that("Flora_brazil is a data.frame", {
+  expect_s3_class(Flora_brazil, "data.frame")
+})
+
+test_that("Flora_brazil has 23 columns", {
+  expect_equal(ncol(Flora_brazil), 23)
+})
+
+test_that("Flora_brazil has 50,239 rows", {
+  expect_equal(nrow(Flora_brazil), 50239)
+})
+
+test_that("Flora_brazil has correct column names", {
+  expect_named(Flora_brazil, c(
+    "species", "scientificName", "acceptedName", "kingdom", "group", "subgroup",
+    "phylum", "class", "order", "family", "genus", "lifeForm", "habitat", "biome",
+    "states", "vegetation", "origin", "endemism", "taxonomicStatus",
+    "nomenclaturalStatus", "vernacularName", "taxonRank", "id"
+  ))
+})
+
+test_that("Flora_brazil column types are correct", {
+  expect_type(Flora_brazil$species, "character")
+  expect_type(Flora_brazil$scientificName, "character")
+  expect_type(Flora_brazil$acceptedName, "character")
+  expect_type(Flora_brazil$kingdom, "character")
+  expect_type(Flora_brazil$group, "character")
+  expect_type(Flora_brazil$subgroup, "character")
+  expect_type(Flora_brazil$phylum, "character")
+  expect_type(Flora_brazil$class, "character")
+  expect_type(Flora_brazil$order, "character")
+  expect_type(Flora_brazil$family, "character")
+  expect_type(Flora_brazil$genus, "character")
+  expect_type(Flora_brazil$lifeForm, "character")
+  expect_type(Flora_brazil$habitat, "character")
+  expect_type(Flora_brazil$biome, "character")
+  expect_type(Flora_brazil$states, "character")
+  expect_type(Flora_brazil$vegetation, "character")
+  expect_type(Flora_brazil$origin, "character")
+  expect_type(Flora_brazil$endemism, "character")
+  expect_type(Flora_brazil$taxonomicStatus, "character")
+  expect_type(Flora_brazil$nomenclaturalStatus, "character")
+  expect_type(Flora_brazil$vernacularName, "character")
+  expect_type(Flora_brazil$taxonRank, "character")
+  expect_type(Flora_brazil$id, "integer")
+})

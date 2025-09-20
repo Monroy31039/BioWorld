@@ -1,0 +1,4 @@
+"0","calle$orden_original <- seq_len(nrow(calle))"
+"0","calle_int <- subset(calle, Recolección==""Entrevista"")"
+"0","# Separar los que no se deben imputar (Observación)"
+"0","calle_observacion <- subset(calle, Recolección == ""Observación"")"

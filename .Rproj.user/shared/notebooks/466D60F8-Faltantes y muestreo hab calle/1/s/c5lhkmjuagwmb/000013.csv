@@ -1,0 +1,3 @@
+"0","calle3 <- calle2 %>%"
+"0","  filter(muestra == 1) "
+"0","head(calle3)"

@@ -1,0 +1,8 @@
+"0",""
+"0","# Cook y leverage (influencia)"
+"0","aug_inf <- augment(modelo_pois, type.residuals = ""deviance"") %>%"
+"0","  mutate(id = row_number())"
+"0",""
+"0","ggplot(aug_inf, aes(id, .cooksd)) +"
+"0","  geom_segment(aes(xend = id, yend = 0)) +"
+"0","  labs(x = ""Obs."", y = ""Cook's D"", title = ""Distancia de Cook"")"

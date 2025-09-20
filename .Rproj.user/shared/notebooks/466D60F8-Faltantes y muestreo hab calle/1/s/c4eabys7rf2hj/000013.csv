@@ -1,0 +1,7 @@
+"0","library(readxl)"
+"0","library(tidyr)"
+"0","library(tidyverse)"
+"0","library(dplyr)"
+"0","CensoHC <- read_excel(""C:/Users/monro/Downloads/CensoHC.xlsx"")"
+"0","hab_calle <- CensoHC"
+"0","head(hab_calle)"

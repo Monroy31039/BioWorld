@@ -1,0 +1,6 @@
+"0",""
+"0","# ==========================="
+"0","# 3) Diagnóstico con performance + gráficos tidy"
+"0","# ==========================="
+"0","# Panel general (abre gráfico con varias pestañas)"
+"0","check_model(modelo_pois)"

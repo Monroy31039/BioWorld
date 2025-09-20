@@ -1,0 +1,29 @@
+# Cargar paquetes necesarios
+library(hexSticker)
+library(cowplot)
+library(showtext)
+
+# Añadir la fuente Google gruesa
+font_add_google("Anton", "anton")  # Fuente sólida, potente y visible
+showtext_auto()  # Activar renderizado de fuentes
+
+# Cargar la imagen (ajustada a la ruta local proporcionada)
+png <- ggdraw() + draw_image("C:/Users/monro/OneDrive/Escritorio/BioWorld 001/logobio02.png", scale = 3.8)
+
+# Generar el sticker para el paquete BioWorldR
+sticker(
+  subplot  = png,
+  package  = "BioWorldR",
+  s_x      = 1,
+  s_y      = 0.78,
+  p_color  = "#228B22",           # Verde natural (plantas)
+  p_family = "anton",
+  p_size   = 22,
+  p_y      = 1.35,
+  h_fill   = "#F5F5F5",           # Fondo claro (armonía)
+  h_color  = "#1E3D59",           # Azul profundo (ciencia, animales)
+  url      = "github.com/Monroy31039/BioWorld",
+  u_color  = "#228B22",           # Verde también en la URL
+  u_size   = 4.5,
+  filename = "C:/Users/monro/OneDrive/Escritorio/BioWorld 001/bioworld_logo2.png"
+)

@@ -1,0 +1,88 @@
+# Developer Packages
+
+library(devtools)
+library(usethis)
+library(roxygen2)
+library(testthat)
+library(pkgdown)
+library(readr)
+
+# Datasets packages
+
+library(avesperu)
+library(eulerr)
+library(letsHerp)
+library(VDJgermlines)
+library(phylosignalDB)
+library(embryogrowth)
+library(nnspat)
+library(shapes)
+library(marmap)
+library(smsets)
+library(condvis)
+library(BeeBDC)
+library(SRMData)
+library(florabr)
+library(BSDA)
+
+
+# Change data sets names
+
+Birds_Peru <- aves_peru_2025_v3 #1
+Plants_list <- plants #2
+Reptiles_df <- allReptiles #3
+Germ_lines_df <- VDJgermlines #4
+Turtles_list <- turtles #5
+Tsd_turtle <- DatabaseTSD #6
+Savannah_trees <- swamptrees #7
+Apes_list <- apes #8
+Orang_m <- pongom.dat #9
+Orang_f <- pongof.dat #10
+Chimp_m <- panm.dat #11
+Chimp_f <- panf.dat #12
+Gorilla_m <- gorm.dat #13
+Gorilla_f <- gorf.dat #14
+Fish_metallo <- metallo #15
+sparrow_morph <- sparrows #16
+Crab_morpho <- crab #17
+Bees_data <- bees3sp #18
+Gorillas_df <- Gorillas #19
+DogsLife_df <- DogsLife #20
+Elephants_df <- Elephants #21
+flwr_time <- Flowering #22
+Snakes_df <- Snakes #23
+Plants_occ <- occurrences #24
+Flora_brazil <- bf_data #25
+Brain_animals <- Brain #26
+Taxonomy_tbl_df <- read.csv("C:/Users/monro/OneDrive/Escritorio/BioWorld 001/taxonomy.csv")
+Extinct_mammals_tbl_df <- read.csv("C:/Users/monro/OneDrive/Escritorio/BioWorld 001/table-1.csv")
+# Create data/*.rda
+
+save(Birds_Peru,file="data/Birds_Peru.rda")
+save(Plants_list, file = "data/Plants_list.rda")
+save(Reptiles_df, file = "data/Reptiles_df.rda")
+save(Germ_lines_df, file = "data/Germ_lines_df.rda")
+save(Turtles_list, file = "data/Turtles_list.rda")
+save(Tsd_turtle, file = "data/Tsd_turtle.rda")
+save(Savannah_trees, file = "data/Savannah_trees.rda")
+save(Apes_list, file = "data/Apes_list.rda")
+save(Orang_m, file = "data/Orang_m.rda")
+save(Orang_f, file = "data/Orang_f.rda")
+save(Chimp_m, file = "data/Chimp_m.rda")
+save(Chimp_f, file = "data/Chimp_f.rda")
+save(Gorilla_m, file = "data/Gorilla_m.rda")
+save(Gorilla_f, file = "data/Gorilla_f.rda")
+save(Fish_metallo, file = "data/Fish_metallo.rda")
+save(sparrow_morph, file = "data/sparrow_morph.rda")
+save(Crab_morpho, file = "data/Crab_morpho.rda")
+save(Bees_data, file = "data/Bees_data.rda")
+save(Gorillas_df, file = "data/Gorillas_df.rda")
+save(DogsLife_df, file = "data/DogsLife_df.rda")
+save(Elephants_df, file = "data/Elephants_df.rda")
+save(flwr_time, file = "data/flwr_time.rda")
+save(Snakes_df, file = "data/Snakes_df.rda")
+save(Plants_occ, file = "data/Plants_occ.rda")
+save(Flora_brazil, file = "data/Flora_brazil.rda")
+save(Brain_animals, file = "data/Brain_animals.rda")
+save(Taxonomy_tbl_df, file = "data/Taxonomy_tbl_df.rda")
+save(Extinct_mammals_tbl_df, file = "data/Extinct_mammals_tbl_df.rda")

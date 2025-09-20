@@ -1,0 +1,6 @@
+"0","gg2 <- BasucoGG %>%"
+"0","  gt() %>%"
+"0","  tab_header("
+"0","    title = ""Estimación del consumo de basuco"""
+"0","  )"
+"0","gg2"

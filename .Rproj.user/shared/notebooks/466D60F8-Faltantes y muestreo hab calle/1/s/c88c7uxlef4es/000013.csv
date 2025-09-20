@@ -1,0 +1,7 @@
+"0","library(gt)"
+"0","gg3 <- tabla_resultados %>%"
+"0","  gt() %>%"
+"0","  tab_header("
+"0","    title = ""Estimaciones por Localidad"""
+"0","  )"
+"0","gg3"

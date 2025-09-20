@@ -1,0 +1,4 @@
+"0",""
+"0","ggplot(aug_inf, aes(id, .hat)) +"
+"0","  geom_segment(aes(xend = id, yend = 0)) +"
+"0","  labs(x = ""Obs."", y = ""Leverage (hat)"", title = ""Valores de leverage"")"

@@ -1,0 +1,4 @@
+"0",""
+"0","# GOF y pseudo-R²"
+"0","glance(modelo_pois) %>% "
+"0","  dplyr::select(AIC, BIC, deviance, df.residual)"

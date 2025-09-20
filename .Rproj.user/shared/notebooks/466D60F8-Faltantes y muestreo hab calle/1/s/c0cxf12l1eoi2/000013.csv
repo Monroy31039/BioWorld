@@ -1,0 +1,3 @@
+"0","calle_int2 <- calle_int %>%"
+"0","  dplyr::select(all_of(c(vars_imputar, vars_auxiliares)))"
+"0","head(calle_int2)"

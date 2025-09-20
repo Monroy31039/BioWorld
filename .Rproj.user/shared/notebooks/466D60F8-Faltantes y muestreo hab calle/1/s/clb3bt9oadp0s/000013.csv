@@ -1,0 +1,5 @@
+"0","# Cuántos seleccionados hay en cada localidad"
+"0","calle3 %>%"
+"0","  filter(muestra == 1) %>%"
+"0","  count(Localidad, name = ""n_muestra"") %>%"
+"0","  arrange(desc(n_muestra))"

@@ -1,0 +1,8 @@
+"0","tabla_dinero   <- table(calle_entrevista$Dinero)"
+"0","probs_dinero   <- as.numeric(prop.table(tabla_dinero))"
+"0","niveles_dinero <- names(tabla_dinero)"
+"0",""
+"0","calle_obs$Dinero <- sapply(seq_len(nrow(calle_obs)), function(i) {"
+"0","  one_hot <- rmultinom(1, size = 1, prob = probs_dinero)"
+"0","  niveles_dinero[which(one_hot == 1)]"
+"0","})"

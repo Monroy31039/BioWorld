@@ -1,0 +1,2 @@
+"0","calle_final_imputado <- calle_final_imputado %>%"
+"0","  mutate(Tiempo = Tiempo / Edad)"

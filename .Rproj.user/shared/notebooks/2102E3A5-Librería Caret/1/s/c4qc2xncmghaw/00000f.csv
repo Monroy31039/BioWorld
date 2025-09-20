@@ -1,0 +1,6 @@
+"0","# Se realiza la transformación sobre conjunto original"
+"0","datos_d<- datos %>% "
+"0","  model.matrix(~ . + 0, data = .) %>%  # Crea variables dummy"
+"0","  as.data.frame()"
+"0",""
+"0","head(datos_d)"

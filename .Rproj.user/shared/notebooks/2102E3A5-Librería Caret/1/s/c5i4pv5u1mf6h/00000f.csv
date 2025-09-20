@@ -1,0 +1,27 @@
+"0","# Se establece la transformación (sobre conjunto de entrenamiento)"
+"0","dummies <- dummyVars(Price ~ ., "
+"0","                     data = train)"
+"0","dummies"
+"1","Dummy Variable Object
+
+"
+"1","Formula: "
+"1","Price ~ .
+"
+"1","10"
+"1",""
+"1"," variables, "
+"1",""
+"1","0"
+"1",""
+"1"," factors
+"
+"1","Variables and levels will be separated by '"
+"1",""
+"1","."
+"1",""
+"1","'
+"
+"1","A less than full rank encoding is used"
+"1","
+"

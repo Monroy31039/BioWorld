@@ -1,0 +1,2 @@
+"0","# Seleccionar solo las columnas necesarias"
+"0","datos_para_imputar <- calle_int2[, c(vars_imputar, vars_auxiliares)]"

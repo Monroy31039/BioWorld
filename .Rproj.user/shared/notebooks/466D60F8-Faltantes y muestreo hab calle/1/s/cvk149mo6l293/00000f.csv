@@ -1,0 +1,5 @@
+"0","TiempoG  <- TiempoG  %>% mutate(Método = ""Calibración por propensión"")"
+"0","TiempoG2 <- TiempoG2 %>% mutate(Método = ""Horvitz-Thompson modificado"")"
+"0","comparacion2 <- bind_rows(TiempoG, TiempoG2)"
+"0","comparacion2 <- comparacion2 %>% select(Método, Media, Varianza, Se_Tiempo, CV_pct)"
+"0","comparacion2"

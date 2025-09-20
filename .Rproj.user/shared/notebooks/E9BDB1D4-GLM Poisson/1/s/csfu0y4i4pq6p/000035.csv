@@ -1,0 +1,89 @@
+"0",""
+"0","# Sobredispersión / colinealidad / outliers / ceros"
+"0","check_overdispersion(modelo_pois)"
+"1","[34m# Overdispersion test
+
+[39m"
+"1","       dispersion ratio =   1.190
+"
+"1","  Pearson's Chi-Squared = 349.853
+"
+"1","                p-value =   0.014
+
+"
+"2","Overdispersion detected.
+"
+"0","check_collinearity(modelo_pois)"
+"1","[34m# Check for Multicollinearity
+[39m"
+"1","
+"
+"1","[32mLow Correlation
+
+[39m"
+"1",""
+"1","       Term"
+"1","  VIF"
+"1","     VIF 95% CI"
+"1"," adj. VIF"
+"1"," Tolerance"
+"1"," Tolerance 95% CI"
+"1","
+"
+"1","       sexo"
+"1"," 1.01"
+"1"," [1.00, 108.33]"
+"1","     1.01"
+"1","      0.99"
+"1","     [0.01, 1.00]"
+"1","
+"
+"1"," grupo_edad"
+"1"," 1.02"
+"1"," [1.00,   4.75]"
+"1","     1.01"
+"1","      0.98"
+"1","     [0.21, 1.00]"
+"1","
+"
+"1","  educacion"
+"1"," 1.03"
+"1"," [1.00,   2.33]"
+"1","     1.01"
+"1","      0.97"
+"1","     [0.43, 1.00]"
+"1","
+"
+"0","check_outliers(modelo_pois)"
+"1","[32mOK: No outliers detected.
+- Based on the following method and threshold: cook (0.5).
+- For variable: (Whole model)
+
+[39m"
+"0","check_zeroinflation(modelo_pois)"
+"1","[34m# Check for zero-inflation
+
+[39m"
+"1","   Observed zeros: 6
+"
+"1","  Predicted zeros: 6
+"
+"1","            Ratio: 1.00
+
+"
+"2","Model seems ok, ratio of observed and predicted zeros is within the tolerance range.
+"
+"0","# phi (Pearson) “a mano”"
+"0","phi <- residuals(modelo_pois, type = ""pearson"") %>% {\(r) sum(r^2) / df.residual(modelo_pois)}()"
+"0","phi"
+"1","[1]"
+"1"," 1.189978"
+"1","
+"
+"0","# Residuos vs ajustados (deviance)"
+"0","augment(modelo_pois, type.residuals = ""deviance"") %>%"
+"0","  ggplot(aes(.fitted, .resid)) +"
+"0","  geom_hline(yintercept = 0, linetype = 2) +"
+"0","  geom_point(alpha = 0.6) +"
+"0","  labs(x = ""Ajustados"", y = ""Residuos de deviance"","
+"0","       title = ""Residuos de deviance vs ajustados (Poisson)"")"

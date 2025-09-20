@@ -1,0 +1,2 @@
+"0","# Graficar el Q-Q plot"
+"0","qqnorm(datossw)"

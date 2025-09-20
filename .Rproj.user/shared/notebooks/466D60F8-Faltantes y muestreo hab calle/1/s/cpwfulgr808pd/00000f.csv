@@ -1,0 +1,6 @@
+"0","# Paso 4: Calcular phi_k (prob. de estar completamente observado)"
+"0","muestra_final <- muestra_final %>%"
+"0","  mutate("
+"0","    phat = predict(modelo_glm, type = ""response""),"
+"0","    w_k = ifelse(R == 1, 1 / (pi_k * phat), NA) "
+"0","  )"

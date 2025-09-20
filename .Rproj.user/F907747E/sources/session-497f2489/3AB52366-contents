@@ -1,0 +1,99 @@
+---
+title: 'Quiz: test de Kruskal- Wallis'
+author: 'Coloque aquí sus nombres completos'
+output: word_document
+date: "2024-04-23"
+---
+
+```{r setup, include=FALSE}
+# No modificar este chunk
+knitr::opts_chunk$set(echo = TRUE,prompt =F, fig.width=8,
+                      fig.align = "center",fig.height = 4,tidy = F,
+                      comment = "",warning = F,message=F,size = "medium",collapse = F,highlight = T,strip.white = F)
+```
+
+
+## Resuelva todos los puntos propuestos con base en la siguiente información
+
+Un biólogo realiza un estudio donde desea comparar $Y:$ *el número de huevos que pone una especie particular de insectos* bajo 3 condiciones distintas: protección contra el sol ($S$), mejora en la alimentación ($A$) y mayor limpieza del nido ($L$).
+
+Para esto se seleccionan aleatoriamente tres grupos de insectos, donde cada grupo fue criado en una y cada una de las condiciones descritas. Al final de un periodo particular, se contó el número de huevos depositados por cada uno de ellos. Estos son los datos
+
+```{r,echo=F}
+# Condición 1
+S<-c(2, 3, 44, 15, 60, 7, 8, 9, 16, 7, 28, 9, 30, 51, 52, 53, 342)
+
+# Condición 2
+A<-c(42, 43, 44, 45, 46, 47, 48, 67, 88, 89, 90, 91, 92, 93, 94, 293)
+
+# Condición 3
+L<-c(23, 24, 25, 26, 27, 28, 25, 36, 37, 58, 59, 60, 71, 72)
+
+df<-data.frame(cond=c(rep("s",length(S)),rep("a",length(A)),rep("l",length(L))),
+               num=c(S,A,L))
+```
+
+A partir de estos datos se desea dar respuesta con $\alpha=0.05$ a estas dos preguntas:
+
++ **Pregunta 1:** ¿Existe al menos una condición particular donde el número mediano de huevos de la especie es distinta a las demás condiciones, o por el contrario, no existe diferencia alguna?
+
++ **Pregunta 2:** De constatarse que, al menos una de las condiciones determina un número mediano de huevos distinta a las demás, ¿Cuál o cuales son esas condiciones?
+
++ ****
+
+
+***
+
+**[0.5] Punto 1.** Calcule y reporte el número mediano de huevos contados bajo las condiciones S, A y L ¿parece existir diferencias entre dichas medianas?
+
+```{r,echo=FALSE,results='hide'}
+# Utilice este espacio para realizar el cálculo en R y reportar el código
+
+```
+
+
+**Respuesta.** *[escriba aquí su respuesta]*
+
+***
+
+**[0.5] Punto 2.** Reporte y describa un gráfico adecuado para comparar las distribuciones de número de huevos bajo las tres condiciones. Con base en dicho gráfico, **responda** ¿parece existir una diferencia significativa entre las tres condiciones? ¿Cuál o cuáles condiciones parecen ser distintas? 
+
+```{r,echo=FALSE}
+# Utilice este espacio para realizar el cálculo en R y reportar el código
+
+```
+
+
+**Respuesta.** *[escriba aquí su respuesta]*
+
+***
+
+**[2.5] Punto 3.** Desarrolle un test apropiado de Kruskal-Wallis con el nivel nivel de significancia requerido para dar respuesta a la pregunta: **¿Existe al menos una condición particular donde el número mediano de huevos de la especie es distinta a las demás condiciones, o por el contrario, no existe diferencia alguna?**. Tome en cuenta reportar adecuadamente:
+
+`a.` **Estadístico de prueba calculado $H$** (asuma un número reducido de grupos de empates dentro de la muestra combinada)
+
+`b.` **Valor crítico de la prueba** (según distribución nula aproximada de $H$),
+
+`c.` **Valor-p de la prueba** (según distribución nula aproximada de $H$),
+
+`d.` **Una decisión sustentada que de respuesta a la pregunta a la que se desea dar respuesta**
+
+```{r,echo=FALSE,results='hide'}
+# Utilice este espacio para realizar el cálculo en R y reportar el código
+
+```
+
+
+**Respuesta.** *[escriba aquí sus respuestas]*
+
+***
+
+**[1.5] Punto 4.** Si logró rechazar $H_o$ al nivel $\alpha$ deseado en el punto anterior, entonces realice un análisis post hoc (contrate de rangos medianos) para dar respuesta a la pregunta: **De constatarse que, al menos una de las condiciones determina un número mediano de huevos distinta a las demás, ¿Cuál o cuales son esas condiciones?**
+
+```{r,echo=FALSE,results='hide'}
+# Utilice este espacio para realizar el cálculo en R y reportar el código
+
+```
+
+**Respuesta.** *[escriba aquí sus respuestas]*
+

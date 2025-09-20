@@ -1,0 +1,134 @@
+---
+title: 'Quiz: test bondad de ajuste a la normalidad'
+author: 'Juan Felipe Bulla'
+output: word_document
+date: "2025-09-09"
+---
+
+```{r setup, include=FALSE}
+# No modificar este chunk
+knitr::opts_chunk$set(echo = TRUE,prompt =F, fig.width=8,
+                      fig.align = "center",fig.height = 4,tidy = F,
+                      comment = "",warning = F,message=F,size = "medium",collapse = F,highlight = T,strip.white = F)
+```
+
+
+## Resuelva todos los puntos propuestos con base en la siguiente información
+
+Quince estudiantes de primer semestre de un carrera en Ciencias obtuvieron los siguientes puntajes en una prueba de rendimiento que va de 0 a 1000:
+
+```{r,echo=F}
+# Puntajes de rendimiento de los 15 estudiantes:
+puntajes<-c(481,620,642,515,740,
+            562,395,615,595,618,
+            525,584,540,580,598)
+puntajes
+```
+
+Se desea utiliza un test de Shapiro-Wilk con $\alpha=0.01$ para evaluar la posibilidad que estos puntajes fueron generados por un proceso normal
+
+***
+
+
+**[0.5] Punto 1.** Exprese matemáticamente las hipótesis nula y alternativa del test de Shapiro-Wilk que va desarrollar.
+
+**Respuesta.** $$
+H_0 : F^*(x) = \frac{1}{\sigma \sqrt{2\pi}} \int_{-\infty}^{x} e^{-\frac{(u - \mu)^2}{2\sigma^2}} \, du \quad \text{con } \mu \text{ y } \sigma^2 \text{ no especificadas}
+$$
+
+
+$$
+H_a : F^*(x) \neq \frac{1}{\sigma \sqrt{2\pi}} \int_{-\infty}^{x} e^{-\frac{(u - \mu)^2}{2\sigma^2}} \, du
+$$
+*
+
+***
+
+**[0.5] Punto 2.** Construya y reporte un Q-Q plot para evaluar visualmente la normalidad de los datos. Describa brevemente sus conclusiones.
+
+```{r,echo=FALSE}
+# Utilice este espacio para realizar el cálculo en R
+qqnorm(puntajes)
+qqline(puntajes, col="red")
+```
+
+**Conclusiones:** *Aunque se observan algunos datos atípicos según el QQ-plot parece haber normalidad en los datos por la forma en la que los datos siguen la línea roja aunque falta confirmarlo con la prueba*
+
+***
+
+**[1.0] Punto 3.** Calcule y reporte el **numerador** del estadístico $W$ de Shapiro-Wilk, es decir: $$\left(\sum_{i=1}^{k} a_i[x^{(n-i+1)}-x^{(i)}]\right)^2$$
+
+```{r,echo=FALSE}
+# Utilice este espacio para realizar el cálculo
+
+x_ord <- sort(puntajes)
+n <- length(x_ord)
+set.seed(123)
+nsim <- 50000
+sim_mat <- replicate(nsim, sort(rnorm(n)))
+m <- rowMeans(sim_mat)           
+V <- cov(t(sim_mat))               
+Vinv <- solve(V)
+numC <- as.numeric( t(m) %*% Vinv %*% Vinv %*% m )  
+C <- sqrt(numC)
+a_vec <- as.numeric( (t(m) %*% Vinv) / C )      
+
+num <- ( sum( a_vec * x_ord ) )^2; num
+
+
+```
+
+**Respuesta:** *El numerador del estadístico W es 81638.05*
+
+***
+
+**[1.0] Punto 4.** Calcule y reporte el **denominador** del estadístico $W$ de Shapiro-Wilk, es decir: $$\sum_{i=1}^n{(x_i-\overline{x})^2}$$
+
+```{r,echo=FALSE}
+# Utilice este espacio para realizar el cálculo
+den <- sum( (puntajes - mean(puntajes))^2 )
+den
+```
+
+**Respuesta:** *El denominador del estadístico W es 86938*
+
+***
+
+**[0.5] Punto 5.** Calcule y reporte el **estadístico $W_c$ calculado de Shapiro Wilk**
+
+```{r,echo=FALSE}
+# Utilice este espacio para realizar el cálculo
+w <- num/den; w
+```
+
+**Respuesta:** *El estadístico W es = 0.9390*
+
+***
+
+**[0.5] Punto 6.** Determine y reporte el valor crítico de la prueba de Shapiro-Wilk para $\alpha=0.01$ y $n=15$.
+
+
+**Respuesta:** *´Según las tablas de Shapiro con n=15 y un alpha = 0.01 el valor crítico es = 0.835*
+
+***
+
+**[0.5] Punto 7.** Tome y reporte adecuadamente una decisión sobre la hipótesis nula del test de Shapiro-Wilk. Justifique su respuesta.
+
+
+**Respuesta:** *[Como el estadístico observado es W=0.9390, es mayor que el valor crítico (0.9390 > 0.835), se puede decir que no hay suficiente evidencia estadística para rechazar la hipótesis nula de normalidad al nivel de significancia del 1%.*
+
+***
+
+**[0.5] Punto 8.** Utilice la función `lillie.test()` de R para verificar sus resultados mediante un test de bondad de ajuste a la normalidad alternativo. Reporte el valor-p y su conclusión.
+
+```{r,echo=FALSE}
+# Utilice este espacio para realizar el cálculo
+library(nortest)
+lillie.test(puntajes)
+```
+
+**Respuesta:** *[El test de Lilliefors arrojó un valor-p = 0.5239.
+Dado que p>0.01 no se rechaza la hipótesis nula de normalidad.
+Por tanto, parece que los datos siguen una distribución normal según el test de lilliefors]*
+
+

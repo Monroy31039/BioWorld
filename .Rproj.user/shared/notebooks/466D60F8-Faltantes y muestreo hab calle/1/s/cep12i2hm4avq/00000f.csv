@@ -1,0 +1,8 @@
+"0","muestra_final$R <- as.factor(muestra_final$R)  # Si R debe ser una variable categórica binaria"
+"0","# Paso 3: Ajustar modelo de respuesta con pesos inversos al diseño"
+"0","modelo_glm <- glm("
+"0","  R ~ .,  # Usa todas las variables excepto R y pi_k"
+"0","  data = muestra_final %>% select(-pi_k), "
+"0","  family = binomial,"
+"0","  weights = 1 / muestra_final$pi_k"
+"0",")"

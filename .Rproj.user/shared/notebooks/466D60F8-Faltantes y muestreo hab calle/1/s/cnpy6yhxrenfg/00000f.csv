@@ -1,0 +1,6 @@
+"0","novan <- c(""Recolección"", "".idx"", ""muestra"")"
+"0","muestra_final <- calle3 %>% "
+"0","  select(-any_of(novan))"
+"0","muestra <- calle3 %>% "
+"0","  select(-any_of(novan))"
+"0","nuevamuestra <- muestra_final"

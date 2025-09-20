@@ -1,0 +1,4 @@
+"0","vars_quitar <- c(""Educación"", ""Dinero"", ""Tiempo"", ""Hipertensión"", ""Diabetes"", ""Cigarrillo"", ""Basuco"", ""Marihuana"", ""Vida"", ""Violencia"", ""Edad"", ""Localidad"", ""Recolección"" )"
+"0",""
+"0","calle_filtrada <- calle %>%"
+"0","  select(any_of(vars_quitar)) "

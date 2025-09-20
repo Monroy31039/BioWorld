@@ -1,0 +1,2 @@
+"0","# Agrega la columna w_k desde muestra_final a muestra"
+"0","muestra$w_k <- muestra_final$w_k"

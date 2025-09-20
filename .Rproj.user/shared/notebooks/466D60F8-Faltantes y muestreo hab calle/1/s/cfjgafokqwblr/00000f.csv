@@ -1,0 +1,8 @@
+"0","nombres_finales <- colnames(completos)"
+"0","calle_observacion <- calle_observacion %>% dplyr::select(all_of(nombres_finales))"
+"0",""
+"0","calle_final <- bind_rows(completos, calle_observacion)"
+"0",""
+"0","calle_final <- calle_final[order(calle_final$orden_original), ]"
+"0",""
+"0","calle_final$Recolección <- calle$Recolección[match(calle_final$orden_original, calle$orden_original)]"

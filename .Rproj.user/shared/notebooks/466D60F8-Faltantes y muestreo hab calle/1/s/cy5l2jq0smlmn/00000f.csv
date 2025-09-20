@@ -1,0 +1,4 @@
+"0","# Histograma de valores propios (Scree Plot)"
+"0","fviz_screeplot(acm_resultado) + "
+"0","  xlab(""Dimensiones"") + "
+"0","  ylab(""% de varianza explicada"")"

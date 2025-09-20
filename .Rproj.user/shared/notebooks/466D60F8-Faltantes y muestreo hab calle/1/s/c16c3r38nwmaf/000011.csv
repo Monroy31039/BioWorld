@@ -1,0 +1,5 @@
+"0","BasucoGG  <-  BasucoGG %>% mutate(Método = ""Calibración por propensión"")"
+"0","BasucoGG2 <- BasucoGG2 %>% mutate(Método = ""Horvitz-Thompson modificado"")"
+"0","comparacion3 <- bind_rows(BasucoGG, BasucoGG2)"
+"0","comparacion3 <- comparacion3 %>% select(Método, Media, Varianza, SE, CV_pct)"
+"0","comparacion3"

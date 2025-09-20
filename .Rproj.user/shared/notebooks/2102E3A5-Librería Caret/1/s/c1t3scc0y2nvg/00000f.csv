@@ -1,0 +1,6 @@
+"0","# Ajuste del modelo kNN con k=13 y realización de las predicciones"
+"0","# Realizar la predicción usando el modelo final ajustado"
+"0","precios_pred <- knn.reg(train = datos_d[, -which(names(datos_d) == ""Price"")],"
+"0","                       y = datos_d$Price,"
+"0","                       k = 13,"
+"0","                       test = nuevos_d)"

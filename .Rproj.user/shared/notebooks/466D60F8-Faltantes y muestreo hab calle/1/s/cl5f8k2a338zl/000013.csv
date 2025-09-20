@@ -1,0 +1,6 @@
+"0","gg1 <- TiempoG %>%"
+"0","  gt() %>%"
+"0","  tab_header("
+"0","    title = ""Estimación de la variable tiempo en la muestra"""
+"0","  )"
+"0","gg1"

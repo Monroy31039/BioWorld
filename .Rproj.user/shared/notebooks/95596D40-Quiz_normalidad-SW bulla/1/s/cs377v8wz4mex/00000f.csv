@@ -1,0 +1,7 @@
+"0","# Utilice este espacio para realizar el cálculo"
+"0","den <- sum( (puntajes - mean(puntajes))^2 )"
+"0","den"
+"1","[1]"
+"1"," 86938"
+"1","
+"

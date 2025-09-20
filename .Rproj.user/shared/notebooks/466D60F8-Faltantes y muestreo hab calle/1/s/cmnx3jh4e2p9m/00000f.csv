@@ -1,0 +1,2 @@
+"0","# Extraer el primer set imputado"
+"0","muestra_final <- complete(imputacion2, 1)"

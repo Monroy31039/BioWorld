@@ -1,0 +1,7 @@
+"0","# Se realiza la transformación sobre los perfiles nuevos"
+"0","# Se realiza la transformación"
+"0","nuevos_d<- nuevos %>% "
+"0","  model.matrix(~ . + 0, data = .) %>% "
+"0","  as.data.frame()"
+"0",""
+"0","nuevos_d"

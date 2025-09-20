@@ -1,0 +1,4 @@
+"0","nuevamuestra$R <- ifelse("
+"0","  complete.cases(nuevamuestra),"
+"0","  1, 0"
+"0",")"

@@ -1,0 +1,3 @@
+"0","# Separamos los datos de observación"
+"0","calle_obs <- calle_final %>% filter(Recolección == ""Observación"")"
+"0","calle_entrevista <- calle_final %>% filter(Recolección == ""Entrevista"")"

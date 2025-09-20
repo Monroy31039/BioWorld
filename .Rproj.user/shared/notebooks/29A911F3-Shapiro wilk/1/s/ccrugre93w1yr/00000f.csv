@@ -1,0 +1,7 @@
+"0","# Calcular la media muestral"
+"0","media <- mean(datossw)"
+"0","media"
+"1","[1]"
+"1"," 5.140571"
+"1","
+"

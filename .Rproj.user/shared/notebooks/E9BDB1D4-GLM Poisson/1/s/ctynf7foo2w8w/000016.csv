@@ -1,0 +1,8 @@
+"0",""
+"0","# Comparación de SE"
+"0","tibble("
+"0","  termino   = names(coef(mod_warp_pois)),"
+"0","  Poisson   = sqrt(diag(vcov(mod_warp_pois))),"
+"0","  QuasiPois = sqrt(diag(vcov(mod_warp_qp))),"
+"0","  NegBin    = sqrt(diag(vcov(mod_warp_nb)))"
+"0",")"

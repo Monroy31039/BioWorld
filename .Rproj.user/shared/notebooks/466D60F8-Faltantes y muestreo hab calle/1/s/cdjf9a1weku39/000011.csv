@@ -1,0 +1,6 @@
+"0","# Crear nueva variable: proporción de vida en calle"
+"0","datos_imp$Tiempo <- datos_imp$Tiempo / datos_imp$Edad"
+"0","# Crear una copia limpia de los datos"
+"0","copia_final <- datos_imp[, c(names(datos_imp)[1:(ncol(datos_imp)-5)], ""phat"", ""w_nr"")]"
+"0","# Verificamos estructura"
+"0","head(copia_final, 10)"

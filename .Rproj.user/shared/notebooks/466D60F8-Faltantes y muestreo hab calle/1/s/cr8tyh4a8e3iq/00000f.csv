@@ -1,0 +1,6 @@
+"0","# 3. Unir los tamaños poblacionales y muestrales a muestra_final"
+"0","muestra_final <- muestra_final %>%"
+"0","  left_join(Nh_tbl, by = ""Localidad"") %>%"
+"0","  left_join(nh_tbl, by = ""Localidad"") %>%"
+"0","  mutate(pi_k = 0.05) %>%"
+"0","  select(-N_h, -n_h)  "

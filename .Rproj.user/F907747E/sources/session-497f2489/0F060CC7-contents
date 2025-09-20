@@ -1,0 +1,106 @@
+Main Package: BioWorldR
+License: GPL-3
+
+Package:  avesperu 0.0.6
+License:  MIT + file LICENSE
+
+1.- aves_peru_2025_v3 - Search for Bird Species Data in the Birds of Peru Dataset #1
+
+
+Package:  eulerr 7.0.2
+License:  GPL-3
+
+1.- plants - Data on plants and the states in the US and Canada they occur in data #4
+
+Package: letsHerp 0.1.0
+License: MIT + file LICENSE
+
+1.- allReptiles - This dataset contains the valid names and url addresses for all reptile species cataloged in The Reptile Database #5
+
+Package: VDJgermlines 0.1
+License: GPL-2
+
+1.- VDJgermlines - The germline information for a variety of species is contained in the VDJgermlines dataframe #6
+
+Package: phylosignalDB 0.2.2
+License: GPL(>= 3)
+
+1.- turtles - Data to examine the effect of turtle carapace length on the clutch size of turtles #7
+
+Package: embryogrowth 10.3
+License: GPL-2
+
+1.- DatabaseTSD - Database of TSD information for reptiles #8
+
+
+Package: nnspat 0.1.2
+License: GPL-2
+
+1.- swamptrees - Locations and species classification of trees in a plot in the Savannah River, SC, USA #9
+
+
+Package: shapes 1.2.7
+License: GPL-2
+
+1.- apes - Great ape skull landmark data. 8 landmarks in 2 dimensions, 167 individuals #10
+2.- pongom.dat - Male orang utan skull data. 8 landmarks in 2 dimensions, 30 individuals #11
+3.- pongof.dat - Female orang utan skull data. 8 landmarks in 2 dimensions, 30 individuals #12
+4.- panm.dat - Male chimpanzee skull data. 8 landmarks in 2 dimensions, 28 individuals #13
+5.- panf.dat - Female chimpanzee skull data. 8 landmarks in 2 dimensions, 26 individuals #14
+6.- gorm.dat - Male gorilla skull data. 8 landmarks in 2 dimensions, 29 individuals #15
+7.- gorf.dat - Female gorilla skull data. 8 landmarks in 2 dimensions, 30 individuals #16
+
+Package: marmap 1.0.12
+License: GPL (>= 3)
+
+1.- metallo - Sampling locations (longitude, latitude, depth in meters) for the deep-sea octocoral species Metallogorgia melanotrichos #17
+
+Package: smsets 1.2.3
+License: MIT + file LICENSE
+
+1.- sparrows - Data extracted from the classical report by Hermon Bumpus (1898) who measured morphological variables in sparrows, after a severe storm. #18
+
+Package: condvis 0.5-1
+License: GPL (>= 2)
+
+1.- crab - Brockmann's crab data #19
+
+
+Package: BeeBDC 1.3.0
+License: GPL (>= 3)
+
+1.- bees3sp - This test dataset includes 105 random occurrence records from three bee species. #20
+
+Package: SRMData 1.0.2
+License: GPL (>= 2)
+
+1.- Gorillas - Chest-beating rates in Gorillas. #21
+2.- DogsLife - The average weight of dog breeds, and the average lifespan of dog breeds, using over 50 individuals for each breed #22
+3.- Elephants - Physical measurements of elephants. #23
+4.- Flowering - Flowering shrubs #24
+5.- Snakes - Measurements of snakes, some of which eat crayfish, and some of which do not #25
+
+Package: florabr 1.3.0
+License: GPL (>= 3)
+
+1.- occurrences - A dataset containing records of 7 plant species downloaded from GBIF #26
+
+
+Package: BSDA 1.2.2
+License: GPL-3
+
+1.- Brain - Brain weight versus body weight of 28 animals #28
+
+
+
+Source: kaggle
+URL: https://www.kaggle.com/datasets/battle11king/extinct-mammals #3
+License: CC0: Public Domain
+Original Name: table-1.csv
+Description:
+This dataset is a collection of recently extinct mammals are defined by the IUCN. Some mammals declared as extinct may very well reappear.
+
+
+
+
+

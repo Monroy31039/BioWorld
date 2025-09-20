@@ -1,0 +1,8 @@
+"0","# Curva de error de predicción sobre el conjunto de prueba"
+"0","ggplot(resultados, aes(x = k, y = RMSE)) +"
+"0","  geom_point(color = ""darkred"", size = 2) +         "
+"0","  geom_line(color = ""darkred"", linetype = ""dashed"") +  "
+"0","  labs(title = ""Curva de Error de prueba para kNN"", "
+"0","       x = ""k: numero de vecinos"", "
+"0","       y = ""RMSE de prueba"") +"
+"0","  theme_light() "

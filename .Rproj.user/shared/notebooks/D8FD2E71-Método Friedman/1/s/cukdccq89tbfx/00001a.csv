@@ -1,0 +1,4 @@
+"0","df %>% "
+"0","  ggplot(mapping = aes(x = Momento, y = Medición, group = Persona)) +"
+"0","  geom_line(alpha = 0.4) +"
+"0","    geom_point(size = 2, color = ""darkred"")"

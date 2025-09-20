@@ -1,0 +1,4 @@
+"0","library(mice)"
+"0","vars_imputar <- c(""Educación"", ""Dinero"", ""Tiempo"",""Hipertensión"", ""Diabetes"", ""Cigarrillo"", ""Basuco"", ""Marihuana"", ""Vida"", ""Violencia"")"
+"0","# Variables auxiliares completas "
+"0","vars_auxiliares <- c(""Edad"", ""Localidad"")  "

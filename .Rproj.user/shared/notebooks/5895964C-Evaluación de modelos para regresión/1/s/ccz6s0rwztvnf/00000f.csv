@@ -1,0 +1,8 @@
+"0","# CONJUNTO DE ENTRENAMIENTO (selección de columnas)"
+"0","train.set <- datos[train.filas,]"
+"0","dim(train.set)"
+"1","[1]"
+"1"," 861"
+"1","   2"
+"1","
+"

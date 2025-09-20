@@ -1,0 +1,4 @@
+"0","Nh <- calle_filtrada %>%"
+"0","  count(Localidad) %>%"
+"0","  rename(N_h = n)"
+"0","Nh"

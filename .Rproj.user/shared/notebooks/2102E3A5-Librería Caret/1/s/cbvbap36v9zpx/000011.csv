@@ -1,0 +1,3 @@
+"0","# Se agrega nuevamente la variable de respuesta"
+"0","train_d<-data.frame(train_d,precio=train$Price)"
+"0","train_d[1:3,]"

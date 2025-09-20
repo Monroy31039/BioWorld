@@ -1,0 +1,6 @@
+"0","# Convertir variables a factor (excepto Edad que es numérica)"
+"0","for (v in vars_imputar) {"
+"0","  if (!is.numeric(datos_para_imputar[[v]])) {"
+"0","    datos_para_imputar[[v]] <- as.factor(datos_para_imputar[[v]])"
+"0","  }"
+"0","}"

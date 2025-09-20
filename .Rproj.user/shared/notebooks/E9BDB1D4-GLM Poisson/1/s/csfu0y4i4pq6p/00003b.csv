@@ -1,0 +1,3 @@
+"0",""
+"0","# Residuos simulados con DHARMa (muy útil en conteos)"
+"0","sim_pois <- simulateResiduals(modelo_pois, plot = TRUE)"

@@ -1,0 +1,4 @@
+"0","predicciones <- muestra %>% "
+"0","  drop_na() %>% "
+"0","  mutate(Tiempo = Tiempo/Edad)"
+"0",""
